@@ -31,7 +31,6 @@ const NavBar = () => {
         <nav className="bg-white shadow-lg m-3 relative z-20">
           <div className="px-4">
             <div className="flex justify-between items-center py-4">
-              
               <div className="image">
                 <Link to="/">
                   <img
@@ -41,8 +40,6 @@ const NavBar = () => {
                   />
                 </Link>
               </div>
-
-              
               <div className="menu">
                 {["Categories", "Birthday Gifts", "Personalised", "Anniversary Gifts", "Occasions", "Recipients"].map((menuItem, index) => (
                   <div
@@ -93,144 +90,98 @@ const NavBar = () => {
                           <Link to="/birthday" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">BIRTHDAY</Link>
                           <Link to="/farewell" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">FAREWELL</Link>
                           <Link to="/wedding" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">WEDDING</Link>
-                          <Link to="/friendship" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">FRIENDSHIP</Link>
-                          <Link to="/anniversary" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">ANNIVERSARY</Link>
                         </>
                       )}
                       {menuItem === "Recipients" && (
                         <>
-                          <Link to="/men" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">MEN</Link>
-                          <Link to="/women" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">WOMEN</Link>
-                          <Link to="/parents" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">PARENTS</Link>
-                          <Link to="/siblings" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">SIBLINGS</Link>
-                          <Link to="/partners" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">PARTNERS</Link>
+                          <Link to="/mother" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">MOTHER</Link>
+                          <Link to="/father" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">FATHER</Link>
+                          <Link to="/brother" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">BROTHER</Link>
+                          <Link to="/sister" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">SISTER</Link>
+                          <Link to="/wife" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">WIFE</Link>
+                          <Link to="/husband" className="block px-4 py-2 text-gray-800 hover:bg-gray-200 text-xs">HUSBAND</Link>
                         </>
                       )}
                     </div>
                   </div>
                 ))}
               </div>
-
-              
-              <div className="flex space-x-5 m-30">
-                <a href="#" className="text-gray-800" onClick={toggleTrackCard}><FaTruckMoving /></a>
-                <a href="#" className="text-gray-800" onClick={toggleSearchCard}><FaSearch /></a>
-                <a href="#" className="text-gray-800 relative" onClick={toggleCartCard}>
+              <div className="icons">
+                <button onClick={toggleSearchCard}>
+                  <FaSearch />
+                </button>
+                <button onClick={toggleTrackCard}>
+                  <FaTruckMoving />
+                </button>
+                <button onClick={toggleCartCard}>
                   <FaShoppingCart />
-
-                </a>
+                </button>
               </div>
             </div>
           </div>
-          
         </nav>
-
-
         <div className={`search-card ${showSearchCard ? 'show' : ''}`}>
           <div className="search-card-content">
-            <button onClick={toggleSearchCard} className="close-button">
-              <FaTimes />
-            </button>
             <div className="search-input-wrapper">
-              <input type="text" placeholder="What are you looking for?" />
+              <input type="text" className="search-input" placeholder="Search..." />
+              <button onClick={toggleSearchCard} className="close-button">
+                <FaTimes />
+              </button>
             </div>
             <div className="scrollable-content">
               <div className="categories">
                 <strong>CATEGORIES</strong>
-                <p>Flowers & Cakes</p>
-                <p>Forever Roses</p>
-                <p>Candles</p>
-                <p>Digital Gifts</p>
-                <p>Experiential Gifts</p>
-                <p>Gag & Quirky Gifts</p>
-                <p>Hatke Gifts</p>
-                <p>Love & Romance</p>
-                <p>Naughty Gifts</p>
-                <p>Pet Gifts</p>
-                <p>Religious Gifts</p>
                 <p>Soft Toys</p>
-                <p>Zodiac Gifts</p>
+                <p>Flowers & Cakes</p>
+                <p>Jewellery</p>
+                <p>Watches</p>
+                <p>Hatke Gifts</p>
+                <p>Photo Gifts</p>
                 <p>Fashion & Style</p>
                 <p>Gift Baskets & Hampers</p>
                 <p>Home & Living</p>
-                <p>Jewellery</p>
-                <p>Business & Executive Gifts</p>
-                <p>Corporate Gifting</p>
+                <p>Personalised Gifts</p>
+                <p>Corporate Gifts</p>
               </div>
               <div className="birthday-gifts">
                 <strong>BIRTHDAY GIFTS</strong>
-                <p>Gifts By Recipients</p>
-                <p>Gifts By Categories</p>
+                <p>By Recipient</p>
+                <p>By Type</p>
+                <p>By Age</p>
               </div>
               <div className="personalised">
                 <strong>PERSONALISED</strong>
-                <p>Baby Announcement</p>
-                <p>Barware</p>
-                <p>Books</p>
-                <p>Calendars</p>
-                <p>Coasters</p>
-                <p>Coffee Mugs</p>
-                <p>Create Your Own</p>
-                <p>Engraved Wooden Plaques</p>
-                <p>Fridge Magnets</p>
-                <p>Jewellery</p>
-                <p>Jigsaw Puzzles</p>
-                <p>Key Chains</p>
-                <p>Magazines & Newspapers</p>
-                <p>Message In A Bottle</p>
-                <p>Mouse Pads</p>
-                <p>Name Plates</p>
-                <p>Notebooks</p>
-                <p>Lamps</p>
-                <p>Love Messages</p>
-                <p>Passport Covers</p>
-                <p>Personalised Wallets & Diaries</p>
-                <p>Picture Stands</p>
-                <p>Pillow Covers</p>
-                <p>Poster Frames</p>
-                <p>Sippers</p>
-                <p>Teddy</p>
-                <p>Cards</p>
-                <p>Chocolate Bars</p>
-                <p>Caricatures</p>
-                <p>Clocks</p>
+                <p>Mugs</p>
+                <p>Photo Frames</p>
                 <p>Cushions</p>
-                <p>Keepsakes</p>
+                <p>Photo Lamps</p>
+                <p>Photo Clocks</p>
+                <p>Photo Tiles</p>
               </div>
               <div className="anniversary-gifts">
                 <strong>ANNIVERSARY GIFTS</strong>
-                <p>Gifts By Recipients</p>
-                <p>Gifts By Categories</p>
+                <p>By Recipient</p>
+                <p>By Type</p>
+                <p>By Year</p>
               </div>
               <div className="occasions">
                 <strong>OCCASIONS</strong>
-                <p>Send Gift to Cities</p>
-                <p>Gift By Occasions</p>
-                <p>Events & Sentiments</p>
-                <p>Upcoming Occasions</p>
+                <p>By Festival</p>
+                <p>By Special Days</p>
+                <p>By Relationships</p>
               </div>
               <div className="recipients">
                 <strong>RECIPIENTS</strong>
-                <p>Wife</p>
-                <p>Husband</p>
-                <p>Girlfriend</p>
-                <p>Boyfriend</p>
-                <p>Men</p>
-                <p>Women</p>
-                <p>Mom</p>
-                <p>Dad</p>
-                <p>Sister</p>
-                <p>Brother</p>
-                <p>Friend</p>
-                <p>Teens</p>
-                <p>Kids</p>
-                <p>Babies</p>
+                <p>For Him</p>
+                <p>For Her</p>
+                <p>For Kids</p>
+                <p>For Parents</p>
+                <p>For Friends</p>
+                <p>For Siblings</p>
               </div>
             </div>
           </div>
         </div>
-
-
         <div className={`cart-card ${showCartCard ? 'show' : ''}`}>
           <div className="cart-card-content">
             <button onClick={toggleCartCard} className="close-button">
@@ -251,7 +202,6 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-
         <div className={`track-card ${showTrackCard ? 'show' : ''}`}>
           <div className="track-card-content">
             <button onClick={toggleTrackCard} className="close-button">
@@ -262,7 +212,6 @@ const NavBar = () => {
               <div className="form-group flex align-middle">
                 <label htmlFor="track-number">Track Number</label><br />
                 <input type="text" id="track-number" name="track-number" required />
-
               </div>
               <button type="submit">Track</button>
             </form>
