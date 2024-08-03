@@ -1,0 +1,63 @@
+
+.label-container {
+    width: 90%;
+    margin-left :120px;
+  }
+  .label-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .label-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .label-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    transition: transform 0.3s ease;
+    width:200px;
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .icon {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text-content {
+    color: #000000;
+  }
+  
+  .title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .description {
+    font-size: 0.75rem;
+  }
+  

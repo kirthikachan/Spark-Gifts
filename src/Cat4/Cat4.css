@@ -1,0 +1,144 @@
+/* Cat4.css */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff; 
+  }
+  
+  .name {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2.5rem 0;
+    color: #333; 
+  }
+  
+  .filters-container {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: 1px solid #333; 
+    background-color: #fff; 
+    color: #333; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .filter-button.active {
+    background-color: #333; 
+    color: #fff; 
+  }
+  
+  .filter-button:hover {
+    background-color: #f0f0f0; 
+  }
+  
+  .product-card {
+    border: 1px solid #ddd; 
+    padding: 1rem;
+    position: relative;
+    background-color: #fff; 
+    color: #333; 
+    transition: box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image {
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s;
+  }
+  
+  .hover-image {
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s;
+  }
+  
+  .product-card:hover .product-image {
+    opacity: 0;
+  }
+  
+  .product-card:hover .hover-image {
+    opacity: 1;
+  }
+  
+  .personalise-badge {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background-color: #000;
+    color: #fff; 
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+  }
+  
+  .product-info {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .product-name {
+    font-size: 1rem;
+    font-weight:600;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  
+  .product-price {
+    font-size: 1.125rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .discount-price {
+    color: #888;
+    text-decoration: line-through;
+    margin-left: 0.5rem;
+  }
+  
+  .product-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .checked {
+    color: #f39c12;
+  }
+  
+  .reviews-count {
+    margin-left: 0.5rem;
+  }
+  
+  .delivery-info {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .view-product-btn {
+    padding: 0.5rem 1rem;
+    background-color: #000; 
+    color: #fff; 
+    border: 1px solid #000; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-product-btn:hover {
+    background-color: #333; 
+  }
+  

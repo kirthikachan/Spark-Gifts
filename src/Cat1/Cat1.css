@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 20px;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hover-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.product-card:hover .hover-image {
+  opacity: 1;
+}
+
+.product-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex-grow: 1;
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight:bold;
+  margin-bottom: 0.5rem;
+}
+
+
+.product-price {
+  font-size: 1rem;
+  color: #888;
+}
+
+.discount-price {
+  color: #e74c3c;
+  margin-left: 8px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.checked {
+  color: #f39c12;
+}
+
+.fa-star, .fa-star-half-alt {
+  font-size: 1rem;
+}
+
+.reviews-count {
+  font-size: 1rem;
+  color: #888;
+  margin-left: 8px;
+}
+
+.delivery-info {
+  font-size: 0.875rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+.view-product-btn {
+  margin-top: auto;
+  width: 100%;
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-product-btn:hover {
+  background-color: #444;
+}
+
+.personalise-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #000;
+  color: white;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.product-card {
+  text-decoration: none;
+}

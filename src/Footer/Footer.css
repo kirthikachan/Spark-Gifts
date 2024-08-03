@@ -1,0 +1,99 @@
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .column-section {
+    padding: 20px;
+  }
+  
+  .column-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .column-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .column-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .column-section ul li a {
+    text-decoration: none;
+    color: #7a7777;
+    transition: color 0.3s ease;
+  }
+  
+  .column-section ul li a:hover {
+    color: black;
+  }
+  
+  .column-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .column-section input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .column-section input[type="email"]:hover {
+    border-color: black;
+  }
+  
+  .column-section button[type="submit"] {
+    padding: 10px;
+    background: #7a7777;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .column-section button[type="submit"]:hover {
+    background-color: black;
+    color: #fff;
+  }
+  
+  .contact-info p {
+    margin: 8px 0;
+  }
+  
+  .contact-info a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: black;
+  }
+  

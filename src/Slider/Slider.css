@@ -1,0 +1,25 @@
+/* Container for the slider section */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Full viewport height */
+  }
+  
+  /* Carousel container styles */
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjusted height */
+    width: 80%;    /* Adjusted width */
+    margin: 10px;  /* Added margin for spacing */
+  }
+  
+  /* Carousel image styles */
+  .carousel-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover; /* Ensure the image covers the area */
+  }
+  
